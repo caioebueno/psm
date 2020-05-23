@@ -1,0 +1,154 @@
+body{
+    background-color: #6D49E5;
+    font-size: 20px;
+    font-family: 'Nunito', sans-serif;
+}
+#logInContainer{
+    margin-top: 50vh;
+    position: absolute;
+}
+.logInRow{
+    padding: 10px;
+}
+#emailLogIn{
+    width: 85vw;
+    height: 8vh;
+    border-radius: 100px;
+    border: none;
+    background-color: rgba(125, 191, 140, 0.3);
+    font-weight: bold;
+}
+#passwordLogIn{
+    width: 85vw;
+    height: 8vh;
+    border-radius: 100px;
+    border: none;
+    background-color: rgba(125, 191, 140, 0.3);
+    font-weight: bold;
+}
+#btnLogIn{
+    width: 60vw;
+    height: 8vh;
+    background-color: #7DBF8C;
+    border: none;
+    border-radius: 100px;
+    font-weight: bold;
+    color: white;
+    font-size: 25px;
+}
+.extraPadding{
+    padding: 35px;
+}
+#emailLogIn::-webkit-input-placeholder{
+    font-size: 25px;
+    text-align: center;
+    color:rgba(0, 0, 0, 0.3);
+}
+#passwordLogIn::-webkit-input-placeholder{
+    font-size: 25px;
+    text-align: center;
+    color:rgba(0, 0, 0, 0.3);
+}
+#welcomeContainer{
+    margin-top: 30vh;
+    position: absolute;
+}
+#welcomeH1{
+    font-weight: bolder;
+    color: white;
+    font-size: 40px;
+}
+#firstContainer{
+    position: absolute;
+}
+#signUpA{
+    padding-right: 15px;
+    padding-top: 25px;
+    font-weight: bolder;
+    color: white;
+}
+#gladH1{
+    font-weight: bolder;
+    color: white;
+    font-size: 40px;
+}
+#signUpContainer{
+    margin-top: 30vh;
+}
+#googleBtn{
+    width: 85vw;
+    height: 8vh;
+    background-color: #4C8BF5;
+    border: none;
+    color: white;
+    font-weight: bolder;
+    border-radius: 100px;
+}
+#facebookBtn{
+    width: 85vw;
+    height: 8vh;
+    background-color: #3B5998;
+    border: none;
+    color: white;
+    font-weight: bolder;
+    border-radius: 100px;
+}
+#emailBtn{
+    width: 85vw;
+    height: 8vh;
+    background-color: #7DBF8C;
+    border: none;
+    color: white;
+    font-weight: bolder;
+    border-radius: 100px;
+}
+#orH5{
+    color: white;
+    font-size: 22px;
+    font-weight: bolder;
+}
+.titleRow{
+    padding-bottom: 40px;
+    padding-left: 12vw;
+}
+#logInA{
+    padding-right: 15px;
+    padding-top: 25px;
+    font-weight: bolder;
+    color: white;
+}
+.formInput{
+    border: none;
+    width: 85vw;
+    height: 8vh;
+    color: white;
+    font-weight: bolder;
+    border-radius: 100px;
+    background-color: rgba(125, 191, 140, 0.3);
+}
+.formInput::-webkit-input-placeholder{
+    font-size: 25px;
+    text-align: center;
+    color:rgba(0, 0, 0, 0.3);
+}
+#signUpBtn{
+    width: 60vw;
+    height: 8vh;
+    background-color: #7DBF8C;
+    border: none;
+    border-radius: 100px;
+    font-weight: bold;
+    color: white;
+    font-size: 25px;
+}
+#signUpEmailContainer{
+    margin-top: 20vh;
+    position: absolute;
+}
+#createH1{
+    font-weight: bolder;
+    color: white;
+    font-size: 40px;
+    padding-bottom: 5vh;
+    text-align: center;
+}
