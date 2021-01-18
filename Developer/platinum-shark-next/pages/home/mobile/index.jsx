@@ -7,7 +7,7 @@ import {Body, Title, Link, LinkContainer, Time,
 } from './styles';
 
 // FUNCTIONS IMPORT
-import formatTime from '../../functions/formatTime';
+import formatTime from '../../../functions/formatTime';
 
 function Home(props) {
   return (

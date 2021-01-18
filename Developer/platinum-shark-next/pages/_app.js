@@ -4,14 +4,14 @@ import '../styles/globals.css';
 import {BreakpointProvider} from 'react-socks';
 
 // STYLED COMPONENTS SETUP
-import darkTheme from './theme/dark';
-import lightTheme from './theme/light';
+import darkTheme from '../theme/dark';
+import lightTheme from '../theme/light';
 import {ThemeProvider} from 'styled-components';
 import GlobalStyles from '../styles/globalStyles';
 
 // FUNCTIONS IMPORT
-import setThemeFunction from './functions/setTheme';
-import getThemeFunction from './functions/getTheme';
+import setThemeFunction from '../functions/setTheme';
+import getThemeFunction from '../functions/getTheme';
 
 function MyApp({Component, pageProps}) {
   const [theme, setTheme] = useState(true);

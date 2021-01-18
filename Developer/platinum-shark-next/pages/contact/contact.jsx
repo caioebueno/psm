@@ -12,11 +12,11 @@ import {Body, Title, Row, Time, Text,
 import Mobile from './mobile';
 
 // FUNCTION IMPORT
-import formatTime from '../functions/formatTime';
-import sendMessege from '../functions/sendMessege';
+import formatTime from '../../functions/formatTime';
+import sendMessege from '../../functions/sendMessege';
 
 // COMPONENTS IMPORT
-import MenuComponent from '../components/menu';
+import MenuComponent from '../../components/menu';
 
 function Contact(props) {
   const [name, setName] = useState('');

@@ -1,5 +1,5 @@
-import darkCursor from '../../public/darkCursor.png';
-import lightCursor from '../../public/lightCursor.png';
+import darkCursor from '../public/darkCursor.png';
+import lightCursor from '../public/lightCursor.png';
 
 const dark = {
   primary: '#27284B',

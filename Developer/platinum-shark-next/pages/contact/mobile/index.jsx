@@ -2,7 +2,7 @@
 import React from 'react';
 
 // COMPONENTS IMPORT
-import Header from '../..//components/mobile/header';
+import Header from '../../../components/mobile/header';
 
 function Contact(props) {
   return (
