@@ -1,5 +1,5 @@
 /* eslint-disable require-jsdoc */
-import React, {useState} from 'react';
+import React, {useEffect, useState} from 'react';
 
 // COMPONENTS IMPORT
 import Header from '../../../components/mobile/header';
@@ -11,6 +11,14 @@ import {Input, Form, TextArea, Button} from '../../../styles/contact/mobile/styl
 
 function Contact(props) {
   const [menu, setMenu] = useState(false);
+
+  useEffect(() => {
+    if (menu) {
+      document.body.style.overflow = 'hidden';
+    } else {
+      document.body.style.overflow = 'unset';
+    }
+  }, [menu]);
 
   return (
     <>

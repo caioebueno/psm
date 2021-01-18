@@ -10,6 +10,14 @@ import Footer from '../../../components/mobile/footer';
 function Work(props) {
   const [menu, setMenu] = useState(false);
 
+  useEffect(() => {
+    if (menu) {
+      document.body.style.overflow = 'hidden';
+    } else {
+      document.body.style.overflow = 'unset';
+    }
+  }, [menu]);
+
   return (
     <>
       {menu && <Menu page={0} setMenu={setMenu} />}
