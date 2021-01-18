@@ -7,7 +7,7 @@ import {Breakpoint} from 'react-socks';
 import Mobile from './mobile';
 
 // STYLED COMPONENTS IMPORT
-import {Body, Title, Row, RowCenter, RowEnd, Time, ThemeToggle, Col, Link, Description} from './style';
+import {Body, Title, Row, RowCenter, RowEnd, Time, ThemeToggle, Col, Link, Description} from '../../styles/home/style';
 
 // FUNCTIONS IMPORT
 import formatTime from '../../functions/formatTime';

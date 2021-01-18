@@ -4,7 +4,7 @@ import React from 'react';
 // STYLED COMPONENTS
 import {Body, Title, Link, LinkContainer, Time,
   BlueText,
-} from './styles';
+} from '../../../styles/home/mobile/styles';
 
 // FUNCTIONS IMPORT
 import formatTime from '../../../functions/formatTime';

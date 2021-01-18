@@ -11,7 +11,7 @@ import {
   WorkItem, SubTitle, Gif, InvertedGif,
   SmallText, ColEnd, WorkItemText,
   SmallWorkItemText, Center, Menu,
-} from './styles';
+} from '../../styles/about/styles';
 
 // COMPONENTS IMPORT
 import Footer from '../../components/footer/index';

@@ -6,7 +6,7 @@ import {Breakpoint} from 'react-socks';
 import {Body, Title, Row, Time, Text,
   Input, Form, TextArea, Button, Placeholder,
   Separator, Center, Col, RowStart, Menu,
-} from './style';
+} from '../../styles/contact/style';
 
 // MOBILE
 import Mobile from './mobile';
