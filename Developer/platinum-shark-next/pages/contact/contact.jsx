@@ -17,6 +17,7 @@ import sendMessege from '../../functions/sendMessege';
 
 // COMPONENTS IMPORT
 import MenuComponent from '../../components/menu';
+import Slider from '../../components/slider';
 
 function Contact(props) {
   const [name, setName] = useState('');
@@ -115,7 +116,7 @@ function Contact(props) {
                 </Text>
                 <Separator />
 
-                <Placeholder />
+                <Slider />
               </Col>
             </Row>
           </Body>

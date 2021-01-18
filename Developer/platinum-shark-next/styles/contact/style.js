@@ -80,6 +80,7 @@ export const Input = styled.input`
     padding-left: 15px;
     border: 1px solid ${(props) => props.theme.secundary};
     background-color: ${(props) => props.theme.primary};
+    color: ${(props) => props.theme.secundary};
     margin: 10px;
     &:focus {
         outline: none;
@@ -99,6 +100,7 @@ export const TextArea = styled.textarea`
     padding: 15px;
     border: 1px solid ${(props) => props.theme.secundary};
     background-color: ${(props) => props.theme.primary};
+    color: ${(props) => props.theme.secundary};
     margin: 10px;
     &:focus {
         outline: none;
