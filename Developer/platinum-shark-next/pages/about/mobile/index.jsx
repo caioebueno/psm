@@ -1,5 +1,5 @@
 /* eslint-disable require-jsdoc */
-import React, {useState} from 'react';
+import React, {useState, useEffect} from 'react';
 
 // COMPONENTS IMPORT
 import Header from '../../../components/mobile/header';
