@@ -7,7 +7,6 @@ const light = {
   timeColor: '#000000',
   cursor: `url(${lightCursor}) 6 6, auto`,
   invertedCursor: `url(${darkCursor}) 6 6, auto`,
-
 };
 
 export default light;
