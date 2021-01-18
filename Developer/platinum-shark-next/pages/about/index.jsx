@@ -14,11 +14,11 @@ import {
 } from './styles';
 
 // COMPONENTS IMPORT
-import Footer from '../components/footer/index';
-import MenuComponent from '../components/menu';
+import Footer from '../../components/footer/index';
+import MenuComponent from '../../components/menu';
 
 // FUNCTIONS IMPORT
-import formatTime from '../functions/formatTime';
+import formatTime from '../../functions/formatTime';
 
 function About(props) {
   const [menu, setMenu] = useState(false);

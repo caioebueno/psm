@@ -9,11 +9,11 @@ import Mobile from './mobile';
 import {Body, Time, Title, Row, Menu} from './styles';
 
 // FUNCTIONS IMPORT
-import formatTime from '../functions/formatTime';
+import formatTime from '../../functions/formatTime';
 
 // COMPONENTS IMPORT
-import Footer from '../components/footer';
-import MenuComponent from '../components/menu';
+import Footer from '../../components/footer';
+import MenuComponent from '../../components/menu';
 
 // eslint-disable-next-line require-jsdoc
 function Work(props) {

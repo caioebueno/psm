@@ -10,7 +10,7 @@ import Mobile from './mobile';
 import {Body, Title, Row, RowCenter, RowEnd, Time, ThemeToggle, Col, Link, Description} from './style';
 
 // FUNCTIONS IMPORT
-import formatTime from '../functions/formatTime';
+import formatTime from '../../functions/formatTime';
 
 Home.propTypes = {
   setTheme: PropTypes.func,
