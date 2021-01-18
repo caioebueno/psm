@@ -46,7 +46,7 @@ export const Time = styled.span`
 
 export const Text = styled.p`
     transition: all 0.5s ease;
-    font-size: 18px;
+    font-size: 20px;
     line-height: 21px;
     letter-spacing: 0.2em;
     color: ${(props) => props.theme.secundary};
@@ -74,7 +74,7 @@ export const Separator = styled.div`
 `;
 
 export const Input = styled.input`
-    width: 250px;
+    width: 280px;
     padding-top: 15px;
     padding-bottom: 15px;
     padding-left: 15px;
@@ -95,7 +95,7 @@ export const Form = styled.form`
 `;
 
 export const TextArea = styled.textarea`
-    width: 520px;
+    width: 580px;
     height: 280px;
     padding: 15px;
     border: 1px solid ${(props) => props.theme.secundary};

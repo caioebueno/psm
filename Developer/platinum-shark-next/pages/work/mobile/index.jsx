@@ -1,14 +1,23 @@
 /* eslint-disable require-jsdoc */
-import React from 'react';
+import React, {useState} from 'react';
 
 // COMPONENTS IMPORT
 import Header from '../../../components/mobile/header';
+import Menu from '../../../components/mobile/menu';
+import Footer from '../../../components/mobile/footer';
+
 
 function Work(props) {
+  const [menu, setMenu] = useState(false);
+
   return (
-    <div>
-      <Header title='Work' />
-    </div>
+    <>
+      {menu && <Menu page={0} setMenu={setMenu} />}
+      <div>
+        <Header title='Work' setMenu={setMenu} />
+        <Footer />
+      </div>
+    </>
   );
 }
 

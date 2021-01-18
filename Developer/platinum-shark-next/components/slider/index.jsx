@@ -10,25 +10,22 @@ import img2 from '../../public/slider2.png';
 import img3 from '../../public/slider3.png';
 import img4 from '../../public/slider4.png';
 import img5 from '../../public/slider5.png';
-import img6 from '../../public/slider6.png';
-import img7 from '../../public/slider7.png';
-import img8 from '../../public/slider9.png';
 
 function Slider(props) {
-  const [imageArray] = useState([img1, img2, img3, img4, img5, img6, img7, img8]);
+  const [imageArray] = useState([img1, img2, img3, img4, img5]);
   const [index, setIndex] = useState(0);
 
   useEffect(() => {
     setTimeout(() => {
       changeImage();
-    }, 800);
+    }, 500);
   }, []);
 
   useEffect(() => {
     console.log('Index updated!');
     setTimeout(() => {
       changeImage();
-    }, 800);
+    }, 500);
   }, [index]);
 
   const changeImage = () => {

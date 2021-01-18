@@ -1,0 +1,45 @@
+import styled from 'styled-components';
+
+export const Input = styled.input`
+    width: 80vw;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-left: 15px;
+    border: 1px solid ${(props) => props.theme.secundary};
+    background-color: ${(props) => props.theme.primary};
+    color: ${(props) => props.theme.secundary};
+    margin: 10px;
+    &:focus {
+        outline: none;
+    }
+`;
+
+export const Form = styled.form`
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+`;
+
+export const TextArea = styled.textarea`
+    width: 80vw;
+    height: 280px;
+    padding: 15px;
+    border: 1px solid ${(props) => props.theme.secundary};
+    background-color: ${(props) => props.theme.primary};
+    color: ${(props) => props.theme.secundary};
+    margin: 10px;
+    &:focus {
+        outline: none;
+    }
+`;
+
+export const Button = styled.button`
+    margin: 10px;
+    font-size: 24px;
+    align-self: flex-start;
+    line-height: 144.5%;
+    letter-spacing: 0.05em;
+    font-family: 'Major Mono Display';
+    background-color: ${(props) => props.theme.primary};
+    color: ${(props) => props.theme.secundary};
+`;

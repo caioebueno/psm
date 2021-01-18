@@ -3,7 +3,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 
 // STYLED COMPONENTS
-import {Body, Title, Time} from './styles';
+import {Body, Title, Time, Col, Menu} from './styles';
 
 // FUNCTION IMPORT
 import formatTime from '../../../functions/formatTime';
@@ -19,7 +19,10 @@ function Header(props) {
   return (
     <Body>
       <Title>{title}</Title>
-      <Time>{formatTime(new Date())}</Time>
+      <Col>
+        <Menu onClick={() => {props.setMenu(true)}}>Menu</Menu>
+        <Time>{formatTime(new Date())}</Time>
+      </Col>
     </Body>
   );
 }

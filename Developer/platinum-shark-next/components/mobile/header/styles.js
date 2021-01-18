@@ -4,6 +4,7 @@ export const Body = styled.div`
     width: 100%;
     display: flex;
     flex-direction: row;  
+    justify-content: space-between;
 `;
 
 export const Title = styled.h1`
@@ -22,8 +23,21 @@ export const Time = styled.span`
     font-size: 11px;
     line-height: 11px;
     letter-spacing: 0.2em;
-    position: absolute;
-    top: 0;
-    right: 0;
+    margin-top: 10px;
+`;
+
+export const Col = styled.div`
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
     margin: 15px;
 `;
+
+export const Menu = styled.button`
+    color: ${(props) => props.theme.secundary};
+    background-color: ${(props) => props.theme.primary};
+    font-family: 'Major Mono Display';
+    font-size: 18px;
+`;
+
+
