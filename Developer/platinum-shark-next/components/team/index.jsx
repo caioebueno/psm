@@ -5,7 +5,6 @@ import React, { useEffect, useRef, useState } from 'react';
 import { Body, MemberContainer, Text, PopUp } from './styles';
 
 function Team(props) {
-  const [show, setShow] = useState(true);
   const [info, setInfo] = useState('');
   const popUpRef = useRef();
 
@@ -22,13 +21,13 @@ function Team(props) {
 
   return (
     <>
-      {show && <PopUp ref={popUpRef}>{info}</PopUp>}
+      <PopUp ref={popUpRef}>{info}</PopUp>
       <Body
         onMouseEnter={() => {
-          setShow(true);
+          popUpRef.current.style.visibility = 'visible';
         }}
         onMouseLeave={() => {
-          setShow(true);
+          popUpRef.current.style.visibility = 'hidden';
         }}
       >
         <MemberContainer

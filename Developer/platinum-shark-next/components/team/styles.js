@@ -1,10 +1,20 @@
 import styled from 'styled-components';
 
+export const PopUp = styled.div`
+    position: absolute;
+    padding: 50px;
+    background-color: red;
+    transition: all 0.3s ease;
+    visibility: hidden;
+`;
+
 export const Body = styled.div`
     display: grid;
     grid-template-columns: 33.3% 33.3% 33.3%;
     grid-template-rows: 25vw 25vw;
-
+    &:hover ${PopUp} {
+        background-color: green;
+    }
     @media(max-width: 1200px) {
         grid-template-columns: 100vw;
         grid-template-rows: 50vw 50vw 50vw 50vw 50vw 50vw;
@@ -38,11 +48,3 @@ export const Text = styled.h3`
     }
 `;
 
-export const PopUp = styled.div`
-    position: absolute;
-    padding: 50px;
-    background-color: red;
-    transition: all 0.3s ease;
-    /* left: ${(props) => props.x}px;
-    top: ${(props) => props.y}px; */
-`;

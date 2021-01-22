@@ -7,7 +7,7 @@ export const Body = styled.div`
 
 export const Image = styled.img`
     @media(max-width: 1200px) {
-        max-width: 100vw;
+        max-width: 60vw;
         margin-bottom: 30px;
         margin-top: 30px;
     }
@@ -20,9 +20,8 @@ export const Row = styled.div`
     justify-content: space-between;
     margin-bottom: 40px;
     @media(max-width: 1200px) {
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
+        flex-wrap: wrap;
+        width: 90vw
         margin-bottom: 100px;
     }
 `;
