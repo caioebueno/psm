@@ -49,7 +49,7 @@ export const Text = styled.p`
     transition: all 0.5s ease;
     max-width: 100vw;
     font-size: 40px;
-    line-height: 40px;
+    line-height: 55px;
     letter-spacing: 0.2em;
     color: ${(props) => props.theme.timeColor};
     margin: 10px;
@@ -119,11 +119,39 @@ export const ColEnd = styled.div`
     align-items: flex-end;
 `;
 
+export const TinyText = styled.p`
+    color: ${(props) => props.theme.secundary};
+    font-size: 20px;
+line-height: 136.5%;
+letter-spacing: 0.05em;
+    margin: 10px;
+`;
+
+export const MediumText = styled.p`
+    transition: all 0.5s ease;
+    font-size: 35px;
+    line-height: 136.5%;
+    letter-spacing: 0.05em;
+    color: ${(props) => props.theme.timeColor};
+    font-weight: 200;
+`;
+
+export const Col = styled.div`
+    display: flex;
+    flex-direction: column;
+    ${({width}) => width && `width: ${width}px`}
+`;
+
 export const SmallText = styled.h5`
     margin: 0px;
     color: ${(props) => props.theme.secundary};
-    font-size: 14px;
+    font-size: 16px;
     margin-bottom: 5px;
-    margin-right: 25px;
+    text-align: right;
+`;
+
+export const Video = styled.video`
+    filter: grayscale(1);
+    margin-bottom: 100px;
 `;
 

@@ -8,12 +8,11 @@ import {Body} from './styles';
 import img0 from '../../public/slider0.png';
 import img1 from '../../public/slider1.png';
 import img2 from '../../public/slider2.png';
-import img3 from '../../public/slider3.png';
 import img4 from '../../public/slider4.png';
 import img5 from '../../public/slider5.png';
 
 function Slider(props) {
-  const [imageArray] = useState([img0, img1, img2, img3, img4, img5]);
+  const [imageArray] = useState([img0, img1, img2, img4, img5]);
   const [index, setIndex] = useState(0);
 
   useEffect(() => {

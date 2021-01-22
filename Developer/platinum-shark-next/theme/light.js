@@ -3,7 +3,7 @@ import darkCursor from '../public/darkCursor.png';
 
 const light = {
   primary: '#FDFBF5',
-  secundary: '#27284B',
+  secundary: '#17182F',
   timeColor: '#000000',
   cursor: `url(${lightCursor}) 6 6, auto`,
   invertedCursor: `url(${darkCursor}) 6 6, auto`,

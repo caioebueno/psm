@@ -5,9 +5,12 @@ import React, {useEffect, useState} from 'react';
 import Header from '../../../components/mobile/header';
 import Menu from '../../../components/mobile/menu';
 import Footer from '../../../components/mobile/footer';
+import Slider from '../../../components/slider';
 
 // STYLED COMPONENTS
-import {Input, Form, TextArea, Button} from '../../../styles/contact/mobile/styles';
+import {Input, Form, TextArea,
+  Button, Body, Text, TextSpacer,}
+  from '../../../styles/contact/mobile/styles';
 
 function Contact(props) {
   const [menu, setMenu] = useState(false);
@@ -23,8 +26,20 @@ function Contact(props) {
   return (
     <>
       {menu && <Menu page={2} setMenu={setMenu} />}
-      <div>
+      <Body>
         <Header title='Contact' setMenu={setMenu} />
+        <TextSpacer />
+        <Text>
+        137 rue saint-ferdinand, <br />
+        suite 222 <br />
+        montreal,quebec <br />
+        h4c2s6
+        </Text>
+        <Text>
+        514-291-3094 <br />
+        514-883-5100 <br />
+        info@platinumshark.com
+        </Text>
         <Form>
           <Input
             placeholder='Name'
@@ -43,8 +58,9 @@ function Contact(props) {
           />
           <Button>Submit</Button>
         </Form>
+        <Slider mobile />
         <Footer />
-      </div>
+      </Body>
     </>
   );
 }

@@ -11,7 +11,7 @@ export const LineZero = styled.div`
 `;
 
 export const LineOne = styled.div`
-    background-color: grey;
+    background-color: #FDFBF5;
     width: 300px;
     height: 50px;
     transform: skew(0deg, -30deg) scaleY(1.337);
@@ -20,7 +20,7 @@ export const LineOne = styled.div`
 `;
 
 export const LineTwo = styled.div`
-    background-color: black;
+    background-color: #C4C4C4;
     width: 300px;
     height: 50px;
     transform: skew(60deg, -30deg) scaleY(0.667);
@@ -29,7 +29,7 @@ export const LineTwo = styled.div`
 `;
 
 export const LineThree = styled.div`
-    background-color: grey;
+    background-color: #FDFBF5;
     width: 300px;
     height: 50px;
     transform: skew(0deg, -30deg) scaleY(1.337);
@@ -49,7 +49,7 @@ export const LineFive = styled.div`
 
 export const Text = styled.p`
     margin: 0px;
-    color: white;
+    color: black;
     font-size: 45px;
     transition: all 0.5s ease-in-out;
     line-height: 48px;

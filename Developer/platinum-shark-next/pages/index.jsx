@@ -5,7 +5,7 @@ import Home from './home/home';
 
 function Index(props) {
   return (
-    <Home />
+    <Home setTheme={props.setTheme} theme={props.theme} />
   );
 }
 

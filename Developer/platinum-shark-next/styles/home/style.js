@@ -9,13 +9,20 @@ export const Body = styled.div`
     transition: all 0.5s ease;
 `;
 
-export const Title = styled.h1`
+export const AnimatedLetter = styled(motion.span)`
+    display: inline-block;
+`;
+
+export const Title = styled(motion.h1)`
     font-size: 240px;
     line-height: 240px;
     letter-spacing: 0.2em;
     font-weight: 200;
     color: ${(props) => props.theme.secundary};
     transition: all 0.5s ease;
+    &:hover ${AnimatedLetter} {
+        
+    }
 `;
 
 export const Time = styled.span`
@@ -93,5 +100,4 @@ export const Description = styled.p`
     letter-spacing: 0.2em;
     color: ${(props) => props.theme.timeColor};
 `;
-
 

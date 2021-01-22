@@ -1,5 +1,5 @@
 /* eslint-disable require-jsdoc */
-import React from 'react';
+import React, {useEffect, useRef, useState} from 'react';
 import PropTypes from 'prop-types';
 import {Breakpoint} from 'react-socks';
 
@@ -7,10 +7,11 @@ import {Breakpoint} from 'react-socks';
 import Mobile from './mobile';
 
 // STYLED COMPONENTS IMPORT
-import {Body, Title, Row, RowCenter, RowEnd, Time, ThemeToggle, Col, Link, Description} from '../../styles/home/style';
+import {Body, Title, Row, RowCenter, RowEnd, Time, ThemeToggle, Col, Link, Description, AnimatedLetter} from '../../styles/home/style';
 
 // FUNCTIONS IMPORT
 import formatTime from '../../functions/formatTime';
+import distortText from '../../functions/distortText';
 
 Home.propTypes = {
   setTheme: PropTypes.func,
@@ -18,13 +19,33 @@ Home.propTypes = {
 };
 
 function Home(props) {
+  const titleRef = useRef();
+  const [title, setTitle] = useState('PSM');
+  const [hover, setHover] = useState(false);
+
+  useEffect(() => {
+    distortText(setTitle, title)
+    if (titleRef && titleRef.current) {
+      titleRef.current.addEventListener('mouseover', () => {setHover(true)});
+      titleRef.current.addEventListener('mouseout', () => {setHover(false)});
+    }
+  }, []);
+  const animetedLetter = {
+    hidden: {
+      transform: 'rotateY(0deg)',
+    },
+    visible: {
+      transform: 'rotateY(180deg)',
+    },
+  };
+
   return (
     <>
       <Breakpoint customQuery='(min-width: 1200px)'>
         <Body>
           <Row>
             <Col>
-              <Title>PSM</Title>
+              <Title ref={titleRef}>{hover ? title : 'PSM'}</Title>
               <ThemeToggle
                 whileHover={{scale: 1.8}}
                 onClick={() => {
@@ -34,7 +55,7 @@ function Home(props) {
             <Time>{formatTime(new Date())}</Time>
           </Row>
           <RowCenter>
-            <Link>WorK</Link>
+            <Link href='/work'>WorK</Link>
             <Link href='/about'>About</Link>
             <Link href='/contact/contact'>Contact</Link>
           </RowCenter>

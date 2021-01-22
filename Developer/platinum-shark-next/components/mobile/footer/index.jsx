@@ -2,11 +2,12 @@
 import React from 'react';
 
 // STYLED COMPONENTS
-import {Body} from './styles';
+import {Body, Text} from './styles';
 
 function Footer(props) {
   return (
     <Body>
+      <Text>PSM</Text>
     </Body>
   );
 }

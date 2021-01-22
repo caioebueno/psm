@@ -18,6 +18,8 @@ export const Form = styled.form`
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin-top: 40px;
+    margin-bottom: 40px;
 `;
 
 export const TextArea = styled.textarea`
@@ -35,11 +37,29 @@ export const TextArea = styled.textarea`
 
 export const Button = styled.button`
     margin: 10px;
-    font-size: 24px;
-    align-self: flex-start;
+    font-size: 20px;
     line-height: 144.5%;
     letter-spacing: 0.05em;
     font-family: 'Major Mono Display';
     background-color: ${(props) => props.theme.primary};
     color: ${(props) => props.theme.secundary};
+`;
+
+export const Body = styled.div`
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+`;
+
+export const Text = styled.p`
+    font-size: 14px;
+    line-height: 144.5%;
+    letter-spacing: 0.05em;
+    color: ${(props) => props.theme.secundary};
+    width: 80vw;
+`;
+
+export const TextSpacer = styled.div`
+    margin-top: 50px;
 `;

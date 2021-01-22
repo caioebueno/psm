@@ -26,8 +26,8 @@ function Menu(props) {
         }}
       >
         {page === 0 ?
-          <ActiveLink href='/home/home' >Home</ActiveLink> :
-          <Link href='/home/home' >Home</Link>}
+          <ActiveLink href='/' >Home</ActiveLink> :
+          <Link href='/' >Home</Link>}
         {page === 1 ?
           <ActiveLink href='/work' >Work</ActiveLink> :
           <Link href='/work' >Work</Link>}

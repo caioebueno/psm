@@ -5,6 +5,7 @@ import React, {useState, useEffect} from 'react';
 import Header from '../../../components/mobile/header';
 import Menu from '../../../components/mobile/menu';
 import Footer from '../../../components/mobile/footer';
+import WorkGrid from '../../../components/workGrid';
 
 
 function Work(props) {
@@ -23,6 +24,7 @@ function Work(props) {
       {menu && <Menu page={0} setMenu={setMenu} />}
       <div>
         <Header title='Work' setMenu={setMenu} />
+        <WorkGrid />
         <Footer />
       </div>
     </>

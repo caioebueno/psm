@@ -6,7 +6,7 @@ import {Breakpoint} from 'react-socks';
 import Mobile from './mobile';
 
 // STYLED COMPONENTS
-import {Body, Time, Title, Row, Menu} from '../../styles/work/styles';
+import {Body, Time, Title, Row, Menu, Center} from '../../styles/work/styles';
 
 // FUNCTIONS IMPORT
 import formatTime from '../../functions/formatTime';
@@ -14,6 +14,7 @@ import formatTime from '../../functions/formatTime';
 // COMPONENTS IMPORT
 import Footer from '../../components/footer';
 import MenuComponent from '../../components/menu';
+import WorkGrid from '../../components/workGrid';
 
 // eslint-disable-next-line require-jsdoc
 function Work(props) {
@@ -23,18 +24,21 @@ function Work(props) {
     <>
       {menu && <MenuComponent page={1} />}
       <Breakpoint customQuery='(min-width: 1200px)'>
-        <Body>
-          <Row>
-            <Title>Work</Title>
-            <div style={{display: 'flex', flexDirection: 'column', alignItems: 'flex-end'}}>
-              <Menu onClick={() => {
-                setMenu(true);
-              }}>Menu</Menu>
-              <Time>{formatTime(new Date())}</Time>
-            </div>
-          </Row>
-        </Body>
-        <Footer />
+        <Center>
+          <Body>
+            <Row>
+              <Title>Work</Title>
+              <div style={{display: 'flex', flexDirection: 'column', alignItems: 'flex-end'}}>
+                <Menu onClick={() => {
+                  setMenu(true);
+                }}>Menu</Menu>
+                <Time>{formatTime(new Date())}</Time>
+              </div>
+            </Row>
+            <WorkGrid />
+          </Body>
+        </Center>
+        <Footer work />
       </Breakpoint>
       <Breakpoint customQuery='(max-width: 1200px)'>
         <Mobile />
