@@ -64,7 +64,7 @@ function Home(props) {
             emails us at <a style={{
               textDecoration: 'underline',
               color: '#A1E0D3',
-            }} href="mailto:info@platinumshark.com">info@platinumshark.com</a> </Description>
+            }} target="_blank" rel="noopener noreferrer" href="mailto:info@platinumshark.com">info@platinumshark.com</a> </Description>
             <Description>Based in <br /> Montreal,Quebec </Description>
           </RowEnd>
         </Body>
