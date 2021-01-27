@@ -1,6 +1,7 @@
 /* eslint-disable require-jsdoc */
-import React, {useState} from 'react';
+import React, {useEffect, useRef, useState} from 'react';
 import {Breakpoint} from 'react-socks';
+import Typewriter from 'typewriter-effect/dist/core';
 
 // STYLED COMPONENTS
 import {Body, Title, Row, Time, Text,
@@ -26,7 +27,8 @@ function Contact(props) {
   const [company, setCompany] = useState('');
   const [messege, setMessege] = useState('');
   const [menu, setMenu] = useState(false);
-
+  const [sent, setSent] = useState(false);
+  const [sentMessege, setSentMessege] = useState('');
 
   const handleSubmit = async (e) => {
     e.preventDefault();
@@ -46,7 +48,29 @@ function Contact(props) {
     setPhone('');
     setCompany('');
     setMessege('');
+    setSent(true);
+    await delay(2000);
+    setSent(false);
   };
+
+  let i = 0;
+
+  useEffect(() => {
+    typeEffect();
+  }, [sent]);
+
+  const typeEffect = async () => {
+    let text = '';
+    let fullText = 'messege sent!';
+
+    for(let i = 0; i < fullText.length; i++){
+      text = text + fullText[i]
+      setSentMessege(text)
+      await delay(100)
+    }
+  };
+
+  const delay = ms => new Promise(res => setTimeout(res, ms));
 
   return (
     <>
@@ -95,7 +119,7 @@ function Contact(props) {
                     <Input placeholder='Phone' value={phone} onChange={(e) => {
                       setPhone(e.target.value);
                     }} />
-                    <Input placeholder='Something' value={company}
+                    <Input placeholder='Company' value={company}
                       onChange={(e) => {
                         setCompany(e.target.value);
                       }} />
@@ -104,7 +128,7 @@ function Contact(props) {
                     onChange={(e) => {
                       setMessege(e.target.value);
                     }} />
-                  <Button onClick={handleSubmit} type='submit'>submit</Button>
+                  {sent ? <Button onClick={(e) => {e.preventDefault()}}>{sentMessege}</Button> : <Button onClick={handleSubmit} type='submit'>submit</Button>}
                 </Form>
 
               </Col>

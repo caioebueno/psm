@@ -61,7 +61,10 @@ function Home(props) {
           </RowCenter>
           <RowEnd>
             <Description>If you’d like to work with us or have any questions, <br />
-            emails us at info@platinumshar.com </Description>
+            emails us at <a style={{
+              textDecoration: 'underline',
+              color: '#A1E0D3',
+            }} href="mailto:info@platinumshark.com">info@platinumshark.com</a> </Description>
             <Description>Based in <br /> Montreal,Quebec </Description>
           </RowEnd>
         </Body>
