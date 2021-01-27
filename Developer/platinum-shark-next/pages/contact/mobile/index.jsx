@@ -40,6 +40,10 @@ function Contact(props) {
         514-883-5100 <br />
         info@platinumshark.com
         </Text>
+        <Text>
+        We are here for you. Have a questions? or just want some more info? let us know, and we'll get back to as soon as we can!<br /><br />
+                  Have a great day :)
+                  </Text>
         <Form>
           <Input
             placeholder='Name'

@@ -41,7 +41,7 @@ export const Link = styled(motion.a)`
     }
 `;
 
-export const ActiveLink = styled.a`
+export const ActiveLink = styled(motion.a)`
     position: relative;
     font-size: 80px;
     margin: 20px;

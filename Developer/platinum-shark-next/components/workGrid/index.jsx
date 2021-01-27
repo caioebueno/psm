@@ -25,6 +25,14 @@ function WorkGrid(props) {
   return (
     <Body>
       <Row alignItems='flex-start'>
+        <Image src={work7} alt=""/>
+        <Image src={work8} alt=""/>
+      </Row>
+      <Row alignItems='flex-start'>
+        <Image src={work9} alt=""/>
+        <Image src={work10} alt=""/>
+      </Row>
+      <Row alignItems='flex-start'>
         <Image src={work1} alt=""/>
         <Image src={work2} alt=""/>
         <Image src={work3} alt=""/>
@@ -33,14 +41,6 @@ function WorkGrid(props) {
         <Image src={work4} alt=""/>
         <Image src={work5} alt=""/>
         <Image src={work6} alt=""/>
-      </Row>
-      <Row alignItems='flex-start'>
-        <Image src={work7} alt=""/>
-        <Image src={work8} alt=""/>
-      </Row>
-      <Row alignItems='flex-start'>
-        <Image src={work9} alt=""/>
-        <Image src={work10} alt=""/>
       </Row>
       <Row alignItems='flex-start'>
         <Image src={work11} alt=""/>

@@ -33,7 +33,7 @@ function MyApp({Component, pageProps}) {
 
   return (
     <BreakpointProvider>
-      <ThemeProvider theme={theme ? lightTheme : darkTheme}>
+      <ThemeProvider theme={theme ? darkTheme : lightTheme}>
         <Component {...pageProps} setTheme={handleThemeChange} theme={theme} />
         <GlobalStyles />
       </ThemeProvider>

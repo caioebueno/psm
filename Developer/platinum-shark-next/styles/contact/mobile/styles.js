@@ -41,6 +41,7 @@ export const Button = styled.button`
     line-height: 144.5%;
     letter-spacing: 0.05em;
     font-family: 'Major Mono Display';
+    align-self: flex-start;
     background-color: ${(props) => props.theme.primary};
     color: ${(props) => props.theme.secundary};
 `;

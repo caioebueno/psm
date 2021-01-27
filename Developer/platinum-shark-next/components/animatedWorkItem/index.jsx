@@ -21,7 +21,7 @@ function AnimatedWorkItem(props) {
 
   const animatedBg = {
     hidden: {
-      x: 387,
+      x: '33vw',
     },
     visible: {
       x: 0,

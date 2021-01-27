@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import {motion} from 'framer-motion';
 
 export const PopUp = styled.div`
     position: absolute;
@@ -6,6 +7,9 @@ export const PopUp = styled.div`
     background-color: red;
     transition: all 0.3s ease;
     visibility: hidden;
+    @media(max-width: 1200px) {
+        display: none;
+    }
 `;
 
 export const Body = styled.div`
@@ -21,9 +25,10 @@ export const Body = styled.div`
     }
 `;
 
-export const MemberContainer = styled.div`
+export const MemberContainer = styled(motion.div)`
     width: 100%;
     height: 25vw;
+    overflow: hidden;
     border: 1px solid black;
     ${(props) => props.side && `border-left: none; border-right: none;`}
     ${(props) => props.bottom && `border-top: none;`}
@@ -48,3 +53,12 @@ export const Text = styled.h3`
     }
 `;
 
+export const AnimatedBg = styled(motion.div)`
+    width: 33vw;
+    height: 25vw;
+    background-color: ${(props) => props.theme.secundary};
+    position: absolute;
+    @media(max-width: 1200px) {
+        display: none;
+    }
+`;

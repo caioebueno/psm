@@ -2,7 +2,18 @@
 import React, { useEffect, useRef, useState } from 'react';
 
 // STYLED COMPONENTS
-import { Body, MemberContainer, Text, PopUp } from './styles';
+import { Body, MemberContainer, Text, PopUp, AnimatedBg } from './styles';
+
+const animatedBg = {
+  hidden: {
+    x: 387,
+    opacity: 0,
+  },
+  visible: {
+    x: 0,
+    opacity: 1,
+  },
+};
 
 function Team(props) {
   const [info, setInfo] = useState('');
@@ -64,6 +75,13 @@ function Team(props) {
           }}
         >
           <Text>Mara <br /> Goodman</Text>
+          <AnimatedBg
+            variants={animatedBg}
+            initial='hidden'
+            transition={{
+              type: 'ease',
+            }}
+          />
         </MemberContainer>
 
         <MemberContainer

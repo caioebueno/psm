@@ -79,9 +79,10 @@ function Contact(props) {
                 </Text>
                 <Separator />
                 <Form>
-                  <Text>dadadddadadddadadddadadddad <br />
-                    adddadadddadadddadadddadadd <br />
-                    dadadddadadddadadddadadd</Text>
+                  <Text>
+                  We are here for you. Have a questions? or just want some more info? let us know, and we'll get back to as soon as we can!<br /><br />
+                  Have a great day :)
+                    </Text>
                   <RowStart>
                     <Input placeholder='Name' value={name} onChange={(e) => {
                       setName(e.target.value);

@@ -7,6 +7,16 @@ import {
   Logo,
 } from './styles';
 
+
+const item = {
+  hidden: { y: -50, opacity: 0 },
+  visible: {
+    y: 0,
+    opacity: 1,
+  }
+};
+
+
 function Menu(props) {
   const {page} = props;
 
@@ -19,24 +29,34 @@ function Menu(props) {
       }}
     >
       <LinkContainer
-        initial={{scale: 0}}
-        animate={{scale: 1}}
+        initial='hidden'
+        animate='visible'
         transition={{
-          delay: 0.3,
+          type: 'keyframes',
+          delayChildren: 0.3,
+          staggerChildren: 0.2,
         }}
       >
         {page === 0 ?
-          <ActiveLink href='/' >Home</ActiveLink> :
-          <Link href='/' >Home</Link>}
+          <ActiveLink transition={{
+            type: 'keyframes',}} href='/' >Home</ActiveLink> :
+          <Link transition={{
+            type: 'keyframes',}} variants={item} href='/' >Home</Link>}
         {page === 1 ?
-          <ActiveLink href='/work' >Work</ActiveLink> :
-          <Link href='/work' >Work</Link>}
+          <ActiveLink transition={{
+            type: 'keyframes',}} variants={item} href='/work' >Work</ActiveLink> :
+          <Link transition={{
+            type: 'keyframes',}} variants={item} href='/work' >Work</Link>}
         {page === 2 ?
-          <ActiveLink href='/about' >About</ActiveLink> :
-          <Link href='/about' >About</Link>}
+          <ActiveLink transition={{
+            type: 'keyframes',}} variants={item} href='/about' >About</ActiveLink> :
+          <Link transition={{
+            type: 'keyframes',}} variants={item} href='/about' >About</Link>}
         {page === 3 ?
-          <ActiveLink href='/contact/contact' >Contact</ActiveLink> :
-          <Link href='/contact/contact' >Contact</Link>}
+          <ActiveLink transition={{
+            type: 'keyframes',}} variants={item} href='/contact/contact' >Contact</ActiveLink> :
+          <Link transition={{
+            type: 'keyframes',}} variants={item} href='/contact/contact' >Contact</Link>}
       </LinkContainer>
       <Logo>PSM</Logo>
     </Body>
