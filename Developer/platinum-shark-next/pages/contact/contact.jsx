@@ -80,8 +80,6 @@ function Contact(props) {
           <Body>
             <Row>
               <Title
-                initial={{scale: 0.5}}
-                animate={{scale: 1}}
               >Contact</Title>
               <div
                 style={{

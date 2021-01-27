@@ -19,7 +19,7 @@ function Footer(props) {
           <Animation />
         }
       </Center>
-      <Logo>PSM</Logo>
+      <Logo href='/'>PSM</Logo>
     </Body>
   );
 }

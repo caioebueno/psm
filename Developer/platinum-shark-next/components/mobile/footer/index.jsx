@@ -7,7 +7,7 @@ import {Body, Text} from './styles';
 function Footer(props) {
   return (
     <Body>
-      <Text>PSM</Text>
+      <Text href='/'>PSM</Text>
     </Body>
   );
 }
