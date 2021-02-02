@@ -2,11 +2,12 @@ import styled from 'styled-components';
 
 export const Body = styled.div`
     width: 100%;
-    height: 100vh;
+    height: 100%;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+    overflow-x: hidden;
 `;
 
 export const Title = styled.h1`
@@ -14,7 +15,7 @@ export const Title = styled.h1`
     writing-mode: vertical-rl;
     text-orientation: upright;
     font-weight: 200;
-    font-size: 210px;
+    font-size: 28vh;
     color: ${(props) => props.theme.secundary};
     letter-spacing: 0.15em;
 `;
@@ -55,6 +56,13 @@ export const Time = styled.span`
 
 export const BlueText = styled.span`
     color: #A1E0D3;
+`;
+
+export const InfoText = styled.h3`
+    margin: 0px;
+    font-size: 18px;
+    margin: 20px;
+    line-height: 120%;
 `;
 
 

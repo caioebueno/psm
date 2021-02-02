@@ -3,10 +3,11 @@ import {motion} from 'framer-motion';
 
 export const Body = styled(motion.div)`
     height: 100%;
-    width: auto;
+    box-sizing: border-box;
     display: flex;
-    position: absolute;
+    position: fixed;
     right: 0;
+    width: 60vw;
     z-index: 50;
     flex-direction: row;
     align-items: center;
@@ -40,7 +41,7 @@ export const Close = styled.button`
     top: 0;
     right: 0;
     margin-right: 10px;
-    margin-top: 10px;
+    margin-top: 20px;
     background-color: ${(props) => props.theme.secundary};
     font-family: 'Major Mono Display';
 `;
