@@ -13,7 +13,10 @@ export const Body = styled(motion.div)`
     align-items: center;
     justify-content: center;
     background-color: ${(props) => props.theme.secundary};
-    padding: 30px;
+    -webkit-transform: translate3d(0, 0, 0);
+   -moz-transform: translate3d(0, 0, 0);
+   -ms-transform: translate3d(0, 0, 0);
+   transform: translate3d(0, 0, 0);
 `;
 
 export const Link = styled.a`
@@ -25,9 +28,12 @@ export const Link = styled.a`
 `;
 
 export const Row = styled.div`
-    display: flex;
-    flex-direction: row;
+    display: flex; 
+     flex-direction: row;
     align-items: flex-start;
+    position: relative;
+    right: 0;
+    width: 50vw;
 `;
 
 export const BlueText = styled.span`
