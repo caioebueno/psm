@@ -31,7 +31,7 @@ export const Row = styled.div`
     display: flex; 
      flex-direction: row;
     align-items: flex-start;
-    position: relative;
+    position: relative ;
     right: 0;
     width: 50vw;
 `;

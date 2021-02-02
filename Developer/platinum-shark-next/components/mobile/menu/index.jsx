@@ -7,12 +7,12 @@ import {BlueText, Body, Link, Row, Close} from './styles';
 function Menu(props) {
   return (
     <Body
-      // initial={{
-      //   x: '-100%',
-      // }}
-      // animate={{
-      //   x: '0',
-      // }}
+      initial={{
+        x: '-100%',
+      }}
+      animate={{
+        x: '0',
+      }}
     >
       <Close onClick={() => {props.setMenu(false)}}>Close</Close>
       <Row>
