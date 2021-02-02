@@ -70,7 +70,7 @@ function Home(props) {
         </Body>
       </Breakpoint>
       <Breakpoint customQuery='(max-width: 1200px)'>
-        <Mobile />
+        <Mobile setTheme={props.setTheme} theme={props.theme} />
       </Breakpoint>
     </>
   );

@@ -1,20 +1,20 @@
 /* eslint-disable require-jsdoc */
-import React from 'react';
+import React, { useState } from 'react';
 
 // STYLED COMPONENTS
 import {Body, Text, SmallText, AnimatedBg, AnimatedLetter} from './styles';
 
 function AnimatedWorkItem(props) {
+  const [color, setColor] = useState(true)
+
   const renderText = () => {
     switch (props.text) {
       case 0:
-        return <Text variants={text}
-          initial='hidden'>web/app  <br /> development</Text>;
+        return <Text color initial='hidden'>web/app  <br /> development</Text>;
       case 1:
-        return <Text variants={text}
-          initial='hidden'>ui/ux <br /> design</Text>;
+        return <Text color initial='hidden'>ui/ux <br /> design</Text>;
       case 2:
-        return <SmallText variants={text}
+        return <SmallText color 
           initial='hidden'>marketing/store <br /> managment</SmallText>;
     }
   };
@@ -28,17 +28,16 @@ function AnimatedWorkItem(props) {
     },
   };
 
-  const text = {
-    hidden: {
-      color: '#000000',
-    },
-    visible: {
-      color: '#ffffff',
-    },
-  };
+
 
   return (
-    <Body whileHover='visible'>
+    <Body whileHover='visible' onMouseEnter={() => {
+      setColor(false)
+    }}
+      onMouseLeave={() => {
+        setColor(true)
+      }}
+    >
       {renderText()}
       <AnimatedBg
         variants={animatedBg}

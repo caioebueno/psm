@@ -47,7 +47,7 @@ function Team(props) {
             setInfo('Daneil Aflalo');
           }}
         >
-          <Text>Daniel <br /> Aflalo</Text>
+          <Text>Daniel Aflalo</Text>
         </MemberContainer>
 
         <MemberContainer
@@ -55,7 +55,7 @@ function Team(props) {
             setInfo('Noah Aflalo');
           }}
         >
-          <Text>Noah <br /> Aflalo</Text>
+          <Text>Noah  Aflalo</Text>
         </MemberContainer>
 
         <MemberContainer
@@ -64,7 +64,7 @@ function Team(props) {
           }}
           side
         >
-          <Text>Caio <br /> Bueno</Text>
+          <Text>Caio Bueno</Text>
         </MemberContainer>
 
         <MemberContainer
@@ -74,7 +74,7 @@ function Team(props) {
             setInfo('Mara Goodman');
           }}
         >
-          <Text>Mara <br /> Goodman</Text>
+          <Text>Mara Goodman</Text>
           <AnimatedBg
             variants={animatedBg}
             initial='hidden'
@@ -90,7 +90,7 @@ function Team(props) {
             setInfo('Jordan Outmezguine');
           }}
         >
-          <Text>Jordan <br /> Outmezguine</Text>
+          <Text>Jordan Outmezguine</Text>
         </MemberContainer>
 
         <MemberContainer
@@ -100,7 +100,7 @@ function Team(props) {
             setInfo('Sara Morris');
           }}
         >
-          <Text>Sara <br /> Morris</Text>
+          <Text>Sara Morris</Text>
         </MemberContainer>
       </Body>
     </>

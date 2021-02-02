@@ -21,7 +21,7 @@ export const Body = styled.div`
     }
     @media(max-width: 1200px) {
         grid-template-columns: 100vw;
-        grid-template-rows: 50vw 50vw 50vw 50vw 50vw 50vw;
+        grid-template-rows: 30vw 30vw 30vw 30vw 30vw 30vw;
     }
 `;
 
@@ -29,9 +29,9 @@ export const MemberContainer = styled(motion.div)`
     width: 100%;
     height: 25vw;
     overflow: hidden;
-    border: 1px solid black;
-    ${(props) => props.side && `border-left: none; border-right: none;`}
-    ${(props) => props.bottom && `border-top: none;`}
+    border: 1px solid ${(props) => props.theme.secundary};
+    ${(props) => props.side && `border-left: none; border-right: none;`};
+    ${(props) => props.bottom && `border-top: none;`};
     display: flex;
     justify-content: center;
     align-items: center;
@@ -39,17 +39,17 @@ export const MemberContainer = styled(motion.div)`
         border-left: none;
         border-right: none;
         border-bottom: none;
-        border-top: 1px solid black;
+        border-top: 1px solid ${(props) => props.theme.secundary};
         height: 100%;
     }
 `;
 
 export const Text = styled.h3`
-    font-size: 48px;
+    font-size: 42px;
     color: ${(props) => props.theme.secundary};
     text-align: center;
     @media(max-width: 1200px) {
-        font-size: 40px;
+        font-size: 26px;
     }
 `;
 

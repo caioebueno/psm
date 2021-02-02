@@ -1,6 +1,28 @@
 import styled from 'styled-components';
 import {motion} from 'framer-motion';
 
+export const Text = styled(motion.h3)`
+    font-size: 40px;
+    line-height: 48px;
+    text-align: center;
+    letter-spacing: 0.05em;
+    z-index: 2;
+    color: ${(props) => props.theme.secundary};
+    ${(props) => props.color === false && `
+        color: ${(props) => props.theme.primary};
+    `}
+`;
+
+
+export const SmallText = styled(motion.h3)`
+    font-size: 30px;
+    line-height: 48px;
+    text-align: center;
+    letter-spacing: 0.05em;
+    z-index: 2;
+    color: ${(props) => props.theme.secundary};
+`;
+
 export const Body = styled(motion.div)`
     width: 387px;
     height: 331px;
@@ -13,23 +35,15 @@ export const Body = styled(motion.div)`
     align-items: center;
     overflow: hidden;
     position: relative;
+    &:hover ${Text} {
+        color: ${(props) => props.theme.primary};
+    }
+    &:hover ${SmallText} {
+        color: ${(props) => props.theme.primary};
+    }
 `;
 
-export const Text = styled(motion.h3)`
-    font-size: 40px;
-    line-height: 48px;
-    text-align: center;
-    letter-spacing: 0.05em;
-    z-index: 2;
-`;
 
-export const SmallText = styled(motion.h3)`
-    font-size: 30px;
-    line-height: 48px;
-    text-align: center;
-    letter-spacing: 0.05em;
-    z-index: 2;
-`;
 
 export const AnimatedBg = styled(motion.div)`
     width: 387px;

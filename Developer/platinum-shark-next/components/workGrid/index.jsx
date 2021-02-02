@@ -99,8 +99,8 @@ function WorkGrid(props) {
             <Image src={work15} alt="" desk left/>
             <Row alignItems='flex-start'>
 
-            <Image src={work13} alt=""/>
-            <Image src={work16} alt=""/>
+              <Image src={work13} alt=""/>
+              <Image src={work16} alt=""/>
 
             </Row>
           </Body>

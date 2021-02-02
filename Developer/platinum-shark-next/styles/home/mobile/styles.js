@@ -1,4 +1,6 @@
 import styled from 'styled-components';
+import {motion} from 'framer-motion';
+
 
 export const Body = styled.div`
     width: 100%;
@@ -63,6 +65,25 @@ export const InfoText = styled.h3`
     font-size: 18px;
     margin: 20px;
     line-height: 120%;
+    color: ${(props) => props.theme.secundary};
 `;
 
-
+export const ThemeToggle = styled(motion.button)`
+    background-color: ${(props) => props.theme.secundary};
+    /* box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.5); */
+    width: 20px;
+    top: 0;
+    right: 0;
+    position: absolute;
+    height: 20px;
+    margin-top: 40px;
+    margin-right: 35px;
+    border-radius: 100px;
+    cursor: ${(props) => props.theme.cursor};
+    &:hover{
+        cursor: ${(props) => props.theme.invertedCursor};
+    }
+    &:focus {
+        box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.5);
+    }
+`;

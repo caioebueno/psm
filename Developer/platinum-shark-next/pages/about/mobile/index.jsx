@@ -11,7 +11,7 @@ import Team from '../../../components/team';
 import video from '../../../public/video.mp4';
 
 // STYLED COMPONENTS
-import {Video, MediumText, TinyText, Body, Text} from '../../../styles/about/mobile/styles.js';
+import {Video, MediumText, TinyText, Body, Text, WorkContainer, WorkText} from '../../../styles/about/mobile/styles.js';
 
 function About(props) {
   const [menu, setMenu] = useState(false);
@@ -69,6 +69,15 @@ find solutions.<br /><br />
             this is the way.
           </TinyText>
         </div>
+        <WorkContainer>
+          <WorkText>web/app <br /> development</WorkText>
+        </WorkContainer>
+        <WorkContainer>
+          <WorkText>ui/ux <br /> design</WorkText>
+        </WorkContainer>
+        <WorkContainer>
+          <WorkText>marketing/store <br /> managment</WorkText>
+        </WorkContainer>
         <Text>team</Text>
         <Team />
         <Footer />

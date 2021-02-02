@@ -3,7 +3,7 @@ import React from 'react';
 
 // STYLED COMPONENTS
 import {Body, Title, Link, LinkContainer, Time,
-  BlueText, InfoText, Col,
+  BlueText, InfoText, Col, ThemeToggle
 } from '../../../styles/home/mobile/styles';
 
 // FUNCTIONS IMPORT
@@ -13,7 +13,14 @@ function Home(props) {
   return (
     <Col>
       <Body>
+        <div>
         <Time>{formatTime(new Date())}</Time>
+        <ThemeToggle
+          onClick={() => {
+            props.setTheme(!props.theme);
+          }} 
+        />
+        </div>
         <Title>PSM</Title>
         <LinkContainer>
           <Link href='/work'>Work</Link>
