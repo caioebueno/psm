@@ -56,6 +56,7 @@ function About(props) {
                   autoPlay
                   muted
                   loop
+                  playsInline
                 >
                   <source src={video} />
                 </Video>

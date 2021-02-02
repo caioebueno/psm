@@ -41,7 +41,7 @@ function Slider(props) {
   // };
 
   return (
-    <Body muted autoPlay loop width='600' height='950'>
+    <Body muted autoPlay loop width='600' playsInline height='950'>
       <source src={video} muted autoPlay loop />
     </Body>
   );
