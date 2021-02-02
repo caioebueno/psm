@@ -1,5 +1,6 @@
 /* eslint-disable require-jsdoc */
 import React from 'react';
+import {Breakpoint, BreakpointProvider} from 'react-socks';
 
 // STYLED COMPONENTS
 import {Body, Row, Image} from './styles';
@@ -20,37 +21,92 @@ import work12 from '../../public/work12.png';
 import work13 from '../../public/work13.png';
 // import work14 from '../../public/work14.png';
 import work15 from '../../public/work15.png';
+import work16 from '../../public/work16.jpeg';
 
 function WorkGrid(props) {
   return (
-    <Body>
-      <Row alignItems='flex-start'>
-        <Image src={work7} alt=""/>
-        <Image src={work8} alt=""/>
-      </Row>
-      <Row alignItems='flex-start'>
-        <Image src={work9} alt=""/>
-        <Image src={work10} alt=""/>
-      </Row>
-      <Row alignItems='flex-start'>
-        <Image src={work1} alt=""/>
-        <Image src={work2} alt=""/>
-        <Image src={work3} alt=""/>
-      </Row>
-      <Row alignItems='flex-start'>
-        <Image src={work4} alt=""/>
-        <Image src={work5} alt=""/>
-        <Image src={work6} alt=""/>
-      </Row>
-      <Row alignItems='flex-start'>
-        <Image src={work11} alt=""/>
-        <Image src={work12} alt=""/>
-      </Row>
-      <Row alignItems='flex-start'>
-        <Image src={work13} alt=""/>
-        <Image src={work15} alt=""/>
-      </Row>
-    </Body>
+    <>
+      <Breakpoint customQuery='(min-width: 1200px)'>
+        <Body>
+          <a href='https://www.lavilleofficial.com'>
+            <Row alignItems='flex-start'>
+              <Image src={work7} alt=""/>
+              <Image src={work8} alt="" desk/>
+            </Row>
+            <Row alignItems='flex-start'>
+              <Image src={work9} alt=""/>
+              <Image src={work10} alt=""/>
+            </Row>
+          </a>
+          <a href='https://survivalleagues.com/'>
+            <Row alignItems='flex-start'>
+              <Image src={work1} alt=""/>
+              <Image src={work2} alt=""/>
+              <Image src={work3} alt=""/>
+            </Row>
+            <Row alignItems='flex-start'>
+              <Image src={work4} alt=""/>
+              <Image src={work5} alt=""/>
+              <Image src={work6} alt=""/>
+            </Row>
+          </a>
+          <a href='https://limlimofficial.com/'>
+            <Row alignItems='flex-start'>
+              <Image src={work11} alt=""/>
+              <Image src={work12} alt=""/>
+            </Row>
+            <Row alignItems='flex-start'>
+              <Image src={work13} alt=""/>
+              <Image src={work15} alt=""/>
+            </Row>
+          </a>
+        </Body>
+      </Breakpoint>
+      <Breakpoint customQuery='(max-width: 1200px)'>
+
+        <a href='https://www.lavilleofficial.com'>
+          <Body>
+            <Image src={work8} alt="" desk/>
+            <Row alignItems='flex-start'>
+              <Image src={work7} alt=""/>
+              <Image src={work10} alt=""/>
+
+            </Row>
+            <Image src={work9} alt="" desk right/>
+          </Body>
+
+        </a>
+        <a href='https://survivalleagues.com/'>
+          <Body>
+            <Image src={work3} alt="" desk left />
+
+
+            <Image src={work4} alt="" desk right/>
+            <Image src={work5} alt="" desk left/>
+            <Image src={work6} alt="" desk right/>
+
+            <Row alignItems='flex-start'>
+              <Image src={work1} alt=""/>
+              <Image src={work2} alt=""/>
+            </Row>
+
+          </Body>
+        </a>
+        <a href='https://limlimofficial.com/'>
+          <Body>
+            <Image src={work11} alt="" desk left/>
+            <Image src={work12} alt="" desk right/>
+            <Image src={work15} alt="" desk left/>
+            <Row alignItems='flex-start'>
+
+            <Image src={work13} alt=""/>
+            <Image src={work16} alt=""/>
+
+            </Row>
+          </Body>
+        </a>
+      </Breakpoint>
+    </>
   );
 }
 

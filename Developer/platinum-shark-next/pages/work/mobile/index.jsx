@@ -25,7 +25,7 @@ function Work(props) {
       <div>
         <Header title='Work' setMenu={setMenu} />
         <WorkGrid />
-        <Footer />
+        <Footer work />
       </div>
     </>
   );

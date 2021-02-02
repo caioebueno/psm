@@ -2,7 +2,8 @@
 import React from 'react';
 
 // STYLED COMPONENTS
-import {Body, Text} from './styles';
+import {Body, Text, Gif} from './styles';
+
 
 function Footer(props) {
   return (

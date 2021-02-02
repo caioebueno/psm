@@ -58,7 +58,10 @@ function About(props) {
                   loop
                   playsInline
                 >
-                  <source src={video} />
+                  <source src={video}  autoPlay
+                  muted
+                  loop
+                  playsInline/>
                 </Video>
                 {/* <Gif src='https://media.giphy.com/media/VbEuHLBUPQm55MyqJg/source.gif' />
                 <InvertedGif src='https://media.giphy.com/media/VbEuHLBUPQm55MyqJg/source.gif' /> */}
