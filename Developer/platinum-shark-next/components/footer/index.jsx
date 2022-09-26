@@ -2,9 +2,7 @@
 import React from 'react';
 
 // STYLED COMPONENTS
-import {Body, Text, BlueText, Logo, Center, Gif} from './styles';
-
-import Animation from '../../components/3dText/index';
+import { Body, Text, BlueText, Logo, Center, Gif } from './styles';
 
 function Footer(props) {
   return (
@@ -13,11 +11,7 @@ function Footer(props) {
         <BlueText href='/contact/contact'> let’s connect</BlueText>
       </Text>
       <Center>
-        {
-          props.work ?
-        <Gif src='https://media.giphy.com/media/Q8VP1dAbO9bliUcE9L/source.gif' /> :
-          <Animation />
-        }
+        <Gif src='https://media.giphy.com/media/Q8VP1dAbO9bliUcE9L/source.gif' />
       </Center>
       <Logo href='/'>PSM</Logo>
     </Body>

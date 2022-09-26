@@ -1,13 +1,13 @@
 /* eslint-disable require-jsdoc */
-import React, {useEffect, useState} from 'react';
+import React, { useEffect, useState } from 'react';
 import '../styles/globals.css';
-import {BreakpointProvider} from 'react-socks';
+import { BreakpointProvider } from 'react-socks';
 import Head from 'next/head';
 
 // STYLED COMPONENTS SETUP
 import darkTheme from '../theme/dark';
 import lightTheme from '../theme/light';
-import {ThemeProvider} from 'styled-components';
+import { ThemeProvider } from 'styled-components';
 import GlobalStyles from '../styles/globalStyles';
 
 // FAVICON
@@ -23,7 +23,7 @@ const faviconArray = [favicon0, favicon1, favicon2, favicon3, favicon4, favicon6
 import setThemeFunction from '../functions/setTheme';
 import getThemeFunction from '../functions/getTheme';
 
-function MyApp({Component, pageProps}) {
+function MyApp({ Component, pageProps }) {
   const [theme, setTheme] = useState(true);
   const [favicon, setFavicon] = useState(favicon1);
 
@@ -50,13 +50,14 @@ function MyApp({Component, pageProps}) {
       setFavicon(faviconArray[0]);
       i = 0;
     }
-    else{
+    else {
       setFavicon(faviconArray[i + 1]);
       i = i + 1;
     }
   };
 
   return (
+
     <BreakpointProvider>
       <Head>
         <link rel="icon" href={favicon} type="image/gif" />
@@ -66,6 +67,7 @@ function MyApp({Component, pageProps}) {
         <GlobalStyles />
       </ThemeProvider>
     </BreakpointProvider>
+   
   );
 }
 
