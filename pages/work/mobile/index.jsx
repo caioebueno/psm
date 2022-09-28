@@ -8,7 +8,7 @@ import Footer from '../../../components/mobile/footer';
 import WorkGrid from '../../../components/workGrid';
 import useMouse from '@react-hook/mouse-position';
 
-import { WorkItem, AbsoulteContainer, WorkWrapper, WorkTitle, WorkDesc } from '../../../styles/work/styles'
+import { WorkItem, AbsoulteContainer, WorkWrapper, WorkTitle, WorkDesc, MobileImageContainer } from '../../../styles/work/styles'
 import Image from 'next/image';
 
 const Item = ({
@@ -49,7 +49,16 @@ const Item = ({
       <WorkWrapper>
         <WorkTitle>{title}</WorkTitle>
         <WorkDesc>{desc}</WorkDesc>
+        <MobileImageContainer>
+        <Image
+          width={160}
+          height={95}
+          src={image}
+          key={key}
+        />
+      </MobileImageContainer>
       </WorkWrapper>
+      
     </WorkItem>
   )
 }

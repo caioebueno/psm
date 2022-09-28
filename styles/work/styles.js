@@ -59,14 +59,13 @@ export const Row = styled.div`
 export const AbsoulteContainer = styled.div`
     position: absolute;
     opacity: 0;
+    transition: all 0.2s ease;
 `
 
 export const WorkItem = styled.div`
     display: grid;
     place-items: center;
-    border-top: 1px solid #131C3E;
-    padding-top: 34px;
-    padding-bottom: 160px;
+    border-top: 1px solid ${(props) => props.theme.secundary};
     width: 100%;
     position: relative;
     &:hover ${AbsoulteContainer} {
@@ -77,10 +76,14 @@ export const WorkItem = styled.div`
 export const WorkWrapper = styled.div`
     width: 1300px;
     display: flex;
+    height: 350px;
+    padding-top: 48px;
     flex-direction: column;
     align-items: flex-start;
     @media (max-width: 1200px) {
         width: 100%;
+        height: unset;
+        padding-bottom: 48px;
         padding-inline: 15px;
     }
 `
@@ -89,16 +92,23 @@ export const WorkTitle = styled.span`
     font-family: 'Major Mono Display';
     font-size: 36px;
     margin-bottom: 24px;
+    color: ${(props) => props.theme.secundary};
 `
 
 export const WorkDesc = styled.span`
     font-family: 'Oriya Sangam MN';
+    color: ${(props) => props.theme.secundary};
     font-size: 24px;
     font-weight: bold;
     line-height: 160.5%;
-    width: 380px;
+    width: 375px;
     @media (max-width: 1200px) {
-        width: 70%;
+        width: minmax(70%, 480px);
     }
 `
-
+export const MobileImageContainer = styled.div`
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+    padding-block: 24px;
+`

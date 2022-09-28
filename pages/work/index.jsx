@@ -7,7 +7,7 @@ import Image from 'next/image'
 import Mobile from './mobile';
 
 // STYLED COMPONENTS
-import { Body, Time, Title, Row, Menu, Center, WorkItem, WorkWrapper, WorkTitle, WorkDesc, AbsoulteContainer } from '../../styles/work/styles';
+import { Body, Time, Title, Row, Menu, Center, WorkItem, WorkWrapper, WorkTitle, WorkDesc, AbsoulteContainer, MobileImageContainer } from '../../styles/work/styles';
 
 // FUNCTIONS IMPORT
 import formatTime from '../../functions/formatTime';
@@ -45,7 +45,7 @@ const Item = ({
             top: `${mouse.y - 91.15}px`
           }}
         >
-          <Image 
+          <Image
             width={307}
             height={182.3}
             src={image}
