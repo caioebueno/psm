@@ -48,6 +48,7 @@ const Item = ({
           <Image
             width={307}
             height={182.3}
+            objectFit="cover"
             src={image}
             key={key}
 
