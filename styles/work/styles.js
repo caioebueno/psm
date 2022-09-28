@@ -59,7 +59,7 @@ export const Row = styled.div`
 export const AbsoulteContainer = styled.div`
     position: absolute;
     opacity: 0;
-    transition: all 0.2s ease;
+    transition: all 0.3s ease-out;
 `
 
 export const WorkItem = styled.div`
