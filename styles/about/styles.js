@@ -121,7 +121,7 @@ export const ColEnd = styled.div`
 
 export const TinyText = styled.p`
     color: ${(props) => props.theme.secundary};
-    font-size: 20px;
+    font-size: 18px;
 line-height: 136.5%;
 letter-spacing: 0.05em;
     margin: 10px;

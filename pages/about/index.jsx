@@ -72,12 +72,15 @@ function About(props) {
                 <MediumText>
             A Great business
             starts as an idea.
-            This idea is then
+            
+                </MediumText>
+                <TinyText>
+                this idea is then
              forged into reality
             through hard work
-             and execution. This
-            is our philosophy.
-                </MediumText>
+             and execution. this
+            is our philosophy.<br /><br />
+                </TinyText>
                 <TinyText>
             we demand our work speaks for
             itself, and engages potential
